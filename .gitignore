@@ -1,0 +1,13 @@
+Objects/
+Listings/
+DebugConfig/
+RTE/
+*.uvguix.*
+*.uvoptx
+*.uvprojx
+*.uvmpw
+*.scvd
+*.axf
+*.elf
+*.o
+*.d
