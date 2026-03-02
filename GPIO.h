@@ -1,14 +1,16 @@
 #ifndef _GPIO_H
 #define _GPIO_H
 
+#include <stdint.h>
 #include "stm32f4xx.h"
+
 // DEFINE BASE ADDRESSED 
-#define GPIO_A_BASE 0x40020000U
-#define GPIO_B_BASE 0x40020400U
-#define GPIO_C_BASE 0x40020800U
-#define GPIO_D_BASE 0x40020C00U
-#define GPIO_E_BASE 0x40021000U
-#define GPIO_H_BASE 0x40021C00U
+#define GPIO_A_BASE 0x40020000UL
+#define GPIO_B_BASE 0x40020400UL
+#define GPIO_C_BASE 0x40020800UL
+#define GPIO_D_BASE 0x40020C00UL
+#define GPIO_E_BASE 0x40021000UL
+#define GPIO_H_BASE 0x40021C00UL
 
 typedef struct
 {
@@ -31,23 +33,23 @@ typedef struct
 #define GPIO_E_CONTROL ((GPIO_TYPE*) GPIO_E_BASE)
 #define GPIO_H_CONTROL ((GPIO_TYPE*) GPIO_H_BASE)
 // Define MODE 
-#define GPIO_MODE_INPUT 	0x0
-#define GPIO_MODE_OUTPUT 	0x1
-#define GPIO_MODE_AF 			0x2
-#define GPIO_MODE_ANALOG 	0x3
+#define GPIO_MODE_INPUT 			0x0
+#define GPIO_MODE_OUTPUT 			0x1
+#define GPIO_MODE_AF 					0x2
+#define GPIO_MODE_ANALOG 			0x3
 // Define OTYPER
 #define GPIO_OUTPUT_PUSHPULL  0x0
 #define GPIO_OUTPUT_OPENDRAIN 0x1
 // Define OUTPUT_SPEED
-#define GPIO_SPEED_LOW 			0x0
-#define GPIO_SPEED_MEDIUM 	0x1
-#define GPIO_SPEED_FAST			0x2
-#define GPIO_SPEED_HIGH			0x3
+#define GPIO_SPEED_LOW 				0x0
+#define GPIO_SPEED_MEDIUM 		0x1
+#define GPIO_SPEED_FAST				0x2
+#define GPIO_SPEED_HIGH				0x3
 // Define Pull-Up and Pull-Down 
-#define GPIO_NO_UPDOWN 			0x0
-#define GPIO_PULL_UP				0x1
-#define GPIO_PULL_DOWN			0x2
-#define GPIO_RESERVED				0x3
+#define GPIO_NO_UPDOWN 				0x0
+#define GPIO_PULL_UP					0x1
+#define GPIO_PULL_DOWN				0x2
+#define GPIO_RESERVED					0x3
 // FUNCTION PROTOTYPES
 void GPIO_SetMode		(GPIO_TYPE *GPIOx, uint8_t pin, uint8_t mode);
 void GPIO_SetOutput (GPIO_TYPE *GPIOx, uint8_t pin, uint8_t type); 
@@ -60,6 +62,5 @@ void GPIO_Set_AFRL	(GPIO_TYPE *GPIOx, uint8_t pin, uint8_t afrl);
 void GPIO_Config_SPI1(void); 
 void GPIO_Config_Analog(void); 
 void GPIO_Config_Buzzer_Output(void);
-void GPIO_Config_Motor_Output(void);
 void GPIO_Config_Relay_Output(void);
 #endif //_GPIO_H

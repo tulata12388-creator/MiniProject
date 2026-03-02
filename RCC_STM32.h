@@ -2,8 +2,9 @@
 #define _RCC_STM32_H_
 // include thu vien
 #include "stm32f4xx.h"
+#include <stdint.h>
 // define base address
-#define RCC_BASE_ADDRESS 0x40023800U
+#define RCC_BASE_ADDRESS 0x40023800UL
 void RCC_Configuration(void);
 // define data
 typedef struct{

@@ -409,6 +409,31 @@
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
             </File>
+            <File>
+              <FileName>TIMER.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\TIMER.h</FilePath>
+            </File>
+            <File>
+              <FileName>SPI.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\SPI.h</FilePath>
+            </File>
+            <File>
+              <FileName>SPI.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SPI.c</FilePath>
+            </File>
+            <File>
+              <FileName>DMA.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\DMA.h</FilePath>
+            </File>
+            <File>
+              <FileName>DMA.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\DMA.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
