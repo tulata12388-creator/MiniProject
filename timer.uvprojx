@@ -260,17 +260,17 @@
                 <Size>0x0</Size>
               </XRAM>
               <OCR_RVCT1>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT1>
               <OCR_RVCT2>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT2>
               <OCR_RVCT3>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT3>
@@ -280,7 +280,7 @@
                 <Size>0x80000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
-                <Type>0</Type>
+                <Type>1</Type>
                 <StartAddress>0x0</StartAddress>
                 <Size>0x0</Size>
               </OCR_RVCT5>
@@ -430,9 +430,44 @@
               <FilePath>.\DMA.h</FilePath>
             </File>
             <File>
-              <FileName>DMA.c</FileName>
+              <FileName>ADC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\ADC.h</FilePath>
+            </File>
+            <File>
+              <FileName>ADC.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\DMA.c</FilePath>
+              <FilePath>.\ADC.c</FilePath>
+            </File>
+            <File>
+              <FileName>Define.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Define.h</FilePath>
+            </File>
+            <File>
+              <FileName>ADC_DMA.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ADC_DMA.c</FilePath>
+            </File>
+            <File>
+              <FileName>module_actuator.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\module_actuator.h</FilePath>
+            </File>
+            <File>
+              <FileName>module_actuator.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\module_actuator.c</FilePath>
+            </File>
+            <File>
+              <FileName>Fire_detection.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Fire_detection.h</FilePath>
+            </File>
+            <File>
+              <FileName>Fire_detection.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Fire_detection.c</FilePath>
             </File>
           </Files>
         </Group>

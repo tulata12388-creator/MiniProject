@@ -3,7 +3,10 @@
 ".\objects\gpio.o"
 ".\objects\main.o"
 ".\objects\spi.o"
-".\objects\dma.o"
+".\objects\adc.o"
+".\objects\adc_dma.o"
+".\objects\module_actuator.o"
+".\objects\fire_detection.o"
 ".\objects\startup_stm32f411xe.o"
 ".\objects\system_stm32f4xx.o"
 --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

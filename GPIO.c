@@ -90,6 +90,14 @@ void GPIO_Config_SPI1(void)
 	GPIO_SetPull		(GPIO_A_CONTROL, 6, GPIO_NO_UPDOWN);
 	GPIO_SetPull		(GPIO_A_CONTROL, 7, GPIO_NO_UPDOWN);
 }
+void SPI1_Select(void)
+{
+    GPIO_A_CONTROL->BSRR = (1<<(4+16)); // NSS LOW
+}
 
+void SPI1_Unselect(void)
+{
+    GPIO_A_CONTROL->BSRR = (1<<4); // NSS HIGH
+}
 
 

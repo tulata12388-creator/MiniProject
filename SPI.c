@@ -1,44 +1,61 @@
 #include "SPI.h"
 #include "RCC_STM32.h"
+/* Buffer de gui du lieu cho Raspberry Pi */
+static uint8_t *spi_tx_buffer = 0;
+static uint16_t spi_tx_length = 0;
+static uint16_t spi_tx_index = 0;
 void SPI1_Init(void)
 {	
 	CLK_CONTROL->APB2ENR |= (1U << 12); 		/* CLOCK SPI1 */
 	/* Disable CR1 */
 	SPI1_CONTROL->CR1 	 &= ~(1U << 6); 		/* SPI_CR1_disabled 	*/
-	/* Clear */
+	/* Clear 
+	   Slave mode
+     CPOL = 0
+     CPHA = 0
+     8-bit data
+     hardware NSS */
 	SPI1_CONTROL->CR1 = 0;
-  SPI1_CONTROL->CR2 = 0;
-	/* Config CR1 */
-	SPI1_CONTROL->CR1		 |=  (1U << 2);		  /* SPI_CR1_Master 		*/
-	
-	SPI1_CONTROL->CR1 	 &= ~(1U << 0);			/* SPI_CR1_CPHA_First */
-	SPI1_CONTROL->CR1		 &= ~(1U << 1);			/* SPI_CR1_CPOL_LOW 	*/
-	
-	SPI1_CONTROL->CR1		 &= ~(7U << 3); 		/* Baudrate: fPCLK /2 */
-	SPI1_CONTROL->CR1		 &= ~(1U << 7); 		/* SPI_CR1_MSB_first  */
-	SPI1_CONTROL->CR1		 |=  (1U << 8);			/* SPI_CR1_SSI_EN     */
-	SPI1_CONTROL->CR1		 |=  (1U << 9);			/* SPI_CR1_SSM_EN 		*/
+	/* Enable RX interrupt */
+  SPI1->CR2 |= (1 << 6);
+	/* Enable interrupt trong NVIC */
+  NVIC_EnableIRQ(SPI1_IRQn);
 	
 	SPI1_CONTROL->CR1		 |= (1U << 6);			/* SPI_CR1_enable 		*/
 }
-void SPI1_Enable(void)
+/* Gán buffer du lieu se gui */
+void SPI1_SetTxBuffer(uint8_t *data, uint16_t length)
 {
-	SPI1_CONTROL->CR1		 |= (1U << 6);
+    spi_tx_buffer = data;
+    spi_tx_length = length;
+    spi_tx_index = 0;
 }
-void SPI1_Disabled(void)
+/* Reset vi trí buffer */
+void SPI1_ResetBuffer(void)
 {
-	SPI1_CONTROL->CR1		 &= ~(1U << 6); 
-}	
-void SPI1_Enable_DMA_TX(void)
-{
-	SPI1_CONTROL->CR2		 |=  (1U << 1);			/* SPI_CR2_TXDMA 			*/
+    spi_tx_index = 0;
 }
-void SPI1_Enable_DMA_RX(void)
+
+void SPI1_IRQHandler(void) /* Auto xu ly khi co du lieu khong can CPU polling */
 {
-  SPI1_CONTROL->CR2		 |=  (1U << 0);			/* SPI_CR2_RXDMA 			*/
+    /* neu SPI nhan du lieu */
+    if (SPI1->SR & (1 << 0))
+    {
+        /* doc du lieu de clear RXNE */
+        uint8_t data = SPI1->DR;
+
+        /* GUI BYTE tiep theo */
+        SPI1->DR = spi_tx_buffer[spi_tx_index];
+
+        /* chuyen sang byte tiep theo */
+        spi_tx_index++;
+
+        /* neu het buffer thì quay lai dau */
+        if (spi_tx_index >= spi_tx_length)
+        {
+            spi_tx_index = 0;
+        }
+    }
 }
-/*
-void SPI1_TransmitReceive_DMA(uint8_t *txBuffer, uint8_t *rxBuffer, uint16_t length)
-{
-	
-}*/
+
+

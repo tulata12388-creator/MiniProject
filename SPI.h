@@ -45,17 +45,11 @@ typedef struct
 #define SPI_CR1_LSB_first			(1U << 7)
 #define SPI_CR1_SSI_EN				(1U << 8)
 #define SPI_CR1_SSM_EN				(1U << 9)
-/* Define control Register 2 */
-#define SPI_CR2_TXDMA   		  (1U << 1) /* có the ghi tiep du lieu 	 */
-#define SPI_CR2_RXDMA   		  (1U << 0) /* Da nhan xong (hoan thanh) */
-/* Define basis function */
-void SPI1_Init(void); 
-void SPI1_Enable(void);
-void SPI1_Disabled(void); 
+/* Define basis function */ 
+void SPI1_Init(void);
+void SPI1_SetTxBuffer(uint8_t *data, uint16_t length);
+void SPI1_ResetBuffer(void);
 /* Polling */ 
 uint8_t SPI1_Transfer(uint8_t data);
-/* DMA */ 
-void SPI1_Enable_DMA_TX(void);
-void SPI1_Enable_DMA_RX(void); 
-void SPI1_TransmitReceive_DMA(uint8_t *txBuffer, uint8_t *rxBuffer, uint16_t length); 
+
 #endif /* _SPI_H */ 

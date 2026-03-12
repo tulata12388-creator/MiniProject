@@ -63,4 +63,7 @@ void GPIO_Config_SPI1(void);
 void GPIO_Config_Analog(void); 
 void GPIO_Config_Buzzer_Output(void);
 void GPIO_Config_Relay_Output(void);
+// Chip select 
+void SPI1_Select(void);
+void SPI1_Unselect(void);
 #endif //_GPIO_H

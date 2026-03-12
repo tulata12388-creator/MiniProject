@@ -28,10 +28,7 @@ typedef struct
 #define DMA2_CONTROL ((DMA_Type*) DMA2_BASE_ADR)
 
 /* Function Prototype */ 
-/* SPI - DMA */
-void DMA2_Stream3_Config_TX (void); 
-void DMA2_Stream0_Config_RX (void); 
-void DMA2_Stream3_Start(uint8_t *buf, uint16_t len);
-void DMA2_Stream0_Start(uint8_t *buf, uint16_t len);
+/* ADC - DMA */
+void DMA2_Stream0_Config_ADC(uint16_t *buffer, uint16_t length);
 /* 					 */
 #endif /*	_DMA_H */
