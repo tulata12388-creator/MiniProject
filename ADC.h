@@ -30,11 +30,13 @@ typedef struct
 } ADC_Type;
 /* Define ADC */ 
 #define ADC1_CONTROL ((ADC_Type*) ADC1_BASE_ADR) 
+#define ADC_CHANNEL_COUNT 4
 /* buffer			*/
 extern volatile uint16_t adc_buffer[4];
 /* Function Prototype */ 
 void ADC1_init(void); 
 void ADC1_Enable_DMA(void);
 void ADC1_Read_Polling(uint16_t *buffer);
+void ADC1_Start(void);
 uint16_t ADC1_Read_DMA(uint8_t channel);
 #endif /* _ADC_ */

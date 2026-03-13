@@ -4,15 +4,22 @@
 #include "DMA.h"
 #include "ADC.h"
 #include "Define.h"
+#include "module_actuator.h" 
+#include "Fire_detection.h" 
+#include "SPI_Protocol.h" 
 int main(void)
 {	
 	RCC_Configuration();
 	GPIO_Config_Analog();
-	small_delay (1000);
   ADC1_init();
-  uint16_t adc_test[4];
+	ADC1_Start();
+  uint16_t temp;
+	uint16_t gas;
 	while(1)
 	{
-    ADC1_Read_Polling(adc_test);
+    temp = ADC1_Read_DMA(ADC_CH_LM35);
+		gas  = ADC1_Read_DMA(ADC_CH_GAS);
+		
+		small_delay(1000000);
 	}
 }

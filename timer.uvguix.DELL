@@ -93,8 +93,8 @@
       <flags>2</flags>
       <showCmd>3</showCmd>
       <MinPosition>
-        <xPos>-1</xPos>
-        <yPos>-1</yPos>
+        <xPos>-32000</xPos>
+        <yPos>-32000</yPos>
       </MinPosition>
       <MaxPosition>
         <xPos>-1</xPos>
@@ -110,8 +110,8 @@
     <MDIClientArea>
       <RegID>0</RegID>
       <MDITabState>
-        <Len>942</Len>
-        <Data>0100000004000000010000000100000001000000010000000000000002000000000000000100000001000000000000002800000028000000010000000B0000000A0000000100000023443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C5350492E6300000000055350492E6300000000C5D4F200FFFFFFFF23443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C5350492E6800000000055350492E6800000000FFDC7800FFFFFFFF24443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C4750494F2E6300000000064750494F2E6300000000BECEA100FFFFFFFF24443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C4750494F2E6800000000064750494F2E6800000000F0A0A100FFFFFFFF2F443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C6D6F64756C655F6163747561746F722E6800000000116D6F64756C655F6163747561746F722E6800000000BCA8E100FFFFFFFF2F443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C6D6F64756C655F6163747561746F722E6300000000116D6F64756C655F6163747561746F722E63000000009CC1B600FFFFFFFF2E443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C466972655F646574656374696F6E2E680000000010466972655F646574656374696F6E2E6800000000F7B88600FFFFFFFF2E443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C466972655F646574656374696F6E2E630000000010466972655F646574656374696F6E2E6300000000D9ADC200FFFFFFFF23443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C4144432E6300000000054144432E6300000000A5C2D700FFFFFFFF2C443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C5350495F50726F746F636F6C2E68000000000E5350495F50726F746F636F6C2E6800000000B3A6BE00FFFFFFFF2C443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C5350495F50726F746F636F6C2E63000000000E5350495F50726F746F636F6C2E6300000000EAD6A300FFFFFFFF0100000010000000C5D4F200FFDC7800BECEA100F0A0A100BCA8E1009CC1B600F7B88600D9ADC200A5C2D700B3A6BE00EAD6A300F6FA7D00B5E99D005FC3CF00C1838300CACAD500010000000000000002000000E400000066000000000600007D020000</Data>
+        <Len>540</Len>
+        <Data>01000000040000000100000001000000010000000100000000000000020000000000000001000000010000000000000028000000280000000100000006000000000000000100000024443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C6D61696E2E6300000000066D61696E2E6300000000C5D4F200FFFFFFFF23443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C4144432E6800000000054144432E6800000000FFDC7800FFFFFFFF23443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C4144432E6300000000054144432E6300000000BECEA100FFFFFFFF26443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C446566696E652E680000000008446566696E652E6800000000F0A0A100FFFFFFFF27443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C4144435F444D412E6300000000094144435F444D412E6300000000BCA8E100FFFFFFFF25443A5C4B656C692066696C65735C4D7950726F6A6563745C54696D65725C54494D45522E68000000000754494D45522E68000000009CC1B600FFFFFFFF0100000010000000C5D4F200FFDC7800BECEA100F0A0A100BCA8E1009CC1B600F7B88600D9ADC200A5C2D700B3A6BE00EAD6A300F6FA7D00B5E99D005FC3CF00C1838300CACAD500010000000000000002000000E400000066000000000600007D020000</Data>
       </MDITabState>
     </MDIClientArea>
     <ViewEx>
@@ -3603,102 +3603,57 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>10</ActiveTab>
+      <ActiveTab>0</ActiveTab>
       <Doc>
-        <Name>.\SPI.c</Name>
-        <ColumnNumber>22</ColumnNumber>
-        <TopLine>13</TopLine>
-        <CurrentLine>27</CurrentLine>
-        <Folding>1</Folding>
-        <ContractedFolders></ContractedFolders>
-        <PaneID>0</PaneID>
-      </Doc>
-      <Doc>
-        <Name>.\SPI.h</Name>
-        <ColumnNumber>27</ColumnNumber>
-        <TopLine>28</TopLine>
-        <CurrentLine>48</CurrentLine>
-        <Folding>1</Folding>
-        <ContractedFolders></ContractedFolders>
-        <PaneID>0</PaneID>
-      </Doc>
-      <Doc>
-        <Name>.\GPIO.c</Name>
+        <Name>.\main.c</Name>
         <ColumnNumber>0</ColumnNumber>
-        <TopLine>70</TopLine>
-        <CurrentLine>93</CurrentLine>
+        <TopLine>2</TopLine>
+        <CurrentLine>5</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>.\GPIO.h</Name>
-        <ColumnNumber>23</ColumnNumber>
-        <TopLine>44</TopLine>
-        <CurrentLine>67</CurrentLine>
-        <Folding>1</Folding>
-        <ContractedFolders></ContractedFolders>
-        <PaneID>0</PaneID>
-      </Doc>
-      <Doc>
-        <Name>.\module_actuator.h</Name>
-        <ColumnNumber>9</ColumnNumber>
-        <TopLine>1</TopLine>
-        <CurrentLine>2</CurrentLine>
-        <Folding>1</Folding>
-        <ContractedFolders></ContractedFolders>
-        <PaneID>0</PaneID>
-      </Doc>
-      <Doc>
-        <Name>.\module_actuator.c</Name>
-        <ColumnNumber>36</ColumnNumber>
-        <TopLine>1</TopLine>
-        <CurrentLine>20</CurrentLine>
-        <Folding>1</Folding>
-        <ContractedFolders></ContractedFolders>
-        <PaneID>0</PaneID>
-      </Doc>
-      <Doc>
-        <Name>.\Fire_detection.h</Name>
-        <ColumnNumber>0</ColumnNumber>
-        <TopLine>1</TopLine>
-        <CurrentLine>4</CurrentLine>
-        <Folding>1</Folding>
-        <ContractedFolders></ContractedFolders>
-        <PaneID>0</PaneID>
-      </Doc>
-      <Doc>
-        <Name>.\Fire_detection.c</Name>
-        <ColumnNumber>27</ColumnNumber>
-        <TopLine>12</TopLine>
-        <CurrentLine>25</CurrentLine>
+        <Name>.\ADC.h</Name>
+        <ColumnNumber>15</ColumnNumber>
+        <TopLine>18</TopLine>
+        <CurrentLine>40</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
         <Name>.\ADC.c</Name>
-        <ColumnNumber>17</ColumnNumber>
-        <TopLine>1</TopLine>
-        <CurrentLine>1</CurrentLine>
+        <ColumnNumber>26</ColumnNumber>
+        <TopLine>23</TopLine>
+        <CurrentLine>73</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
       </Doc>
       <Doc>
-        <Name>.\SPI_Protocol.h</Name>
-        <ColumnNumber>22</ColumnNumber>
-        <TopLine>1</TopLine>
-        <CurrentLine>4</CurrentLine>
-        <Folding>1</Folding>
-        <ContractedFolders></ContractedFolders>
-        <PaneID>0</PaneID>
-      </Doc>
-      <Doc>
-        <Name>.\SPI_Protocol.c</Name>
-        <ColumnNumber>33</ColumnNumber>
+        <Name>.\Define.h</Name>
+        <ColumnNumber>0</ColumnNumber>
         <TopLine>1</TopLine>
         <CurrentLine>12</CurrentLine>
+        <Folding>1</Folding>
+        <ContractedFolders></ContractedFolders>
+        <PaneID>0</PaneID>
+      </Doc>
+      <Doc>
+        <Name>.\ADC_DMA.c</Name>
+        <ColumnNumber>0</ColumnNumber>
+        <TopLine>25</TopLine>
+        <CurrentLine>13</CurrentLine>
+        <Folding>1</Folding>
+        <ContractedFolders></ContractedFolders>
+        <PaneID>0</PaneID>
+      </Doc>
+      <Doc>
+        <Name>.\TIMER.h</Name>
+        <ColumnNumber>0</ColumnNumber>
+        <TopLine>32</TopLine>
+        <CurrentLine>1</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>

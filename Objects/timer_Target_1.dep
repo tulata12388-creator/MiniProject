@@ -15,7 +15,7 @@ I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\
 I (D:\Keli IDE Pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x698B5AFC)
 I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6999E2E9)
 I (RCC_STM32.h)(0x69A2D2C0)
-F (.\main.c)(0x69AB2691)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-I"D:/Keli IDE Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include"-I"D:/Keli IDE Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="543" -DSTM32F411xE -D_RTE_-o ./objects/main.o -MMD)
+F (.\main.c)(0x69B3BC6B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-I"D:/Keli IDE Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include"-I"D:/Keli IDE Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="543" -DSTM32F411xE -D_RTE_-o ./objects/main.o -MMD)
 I (RCC_STM32.h)(0x69A2D2C0)
 I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x6999E2E9)
 I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x6999E2E8)
@@ -24,8 +24,11 @@ I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\
 I (GPIO.h)(0x69B30FEB)
 I (SPI.h)(0x69B31813)
 I (DMA.h)(0x69AB2CD1)
-I (ADC.h)(0x69AB24CF)
+I (ADC.h)(0x69B3BB2E)
 I (Define.h)(0x69AB25D5)
+I (module_actuator.h)(0x69B31C08)
+I (Fire_detection.h)(0x69B31C5E)
+I (SPI_Protocol.h)(0x69B3B419)
 F (.\TIMER.h)(0x69A3166A)()
 F (.\SPI.h)(0x69B31813)()
 F (.\SPI.c)(0x69B3186A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-I"D:/Keli IDE Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include"-I"D:/Keli IDE Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="543" -DSTM32F411xE -D_RTE_-o ./objects/spi.o -MMD)
@@ -36,15 +39,15 @@ I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\
 I (D:\Keli IDE Pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x698B5AFC)
 I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6999E2E9)
 F (.\DMA.h)(0x69AB2CD1)()
-F (.\ADC.h)(0x69AB24CF)()
-F (.\ADC.c)(0x69AB25F8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-I"D:/Keli IDE Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include"-I"D:/Keli IDE Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="543" -DSTM32F411xE -D_RTE_-o ./objects/adc.o -MMD)
-I (ADC.h)(0x69AB24CF)
+F (.\ADC.c)(0x69B3BB23)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-I"D:/Keli IDE Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include"-I"D:/Keli IDE Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="543" -DSTM32F411xE -D_RTE_-o ./objects/adc.o -MMD)
+I (ADC.h)(0x69B3BB2E)
 I (RCC_STM32.h)(0x69A2D2C0)
 I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x6999E2E9)
 I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x6999E2E8)
 I (D:\Keli IDE Pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x698B5AFC)
 I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6999E2E9)
 I (Define.h)(0x69AB25D5)
+F (.\ADC.h)(0x69B3BB2E)()
 F (.\Define.h)(0x69AB25D5)()
 F (.\ADC_DMA.c)(0x69AB2C63)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-I"D:/Keli IDE Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include"-I"D:/Keli IDE Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="543" -DSTM32F411xE -D_RTE_-o ./objects/adc_dma.o -MMD)
 I (RCC_STM32.h)(0x69A2D2C0)
@@ -52,7 +55,7 @@ I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\
 I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x6999E2E8)
 I (D:\Keli IDE Pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x698B5AFC)
 I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6999E2E9)
-I (ADC.h)(0x69AB24CF)
+I (ADC.h)(0x69B3BB2E)
 I (DMA.h)(0x69AB2CD1)
 I (Define.h)(0x69AB25D5)
 F (.\module_actuator.h)(0x69B31C08)()
@@ -66,14 +69,14 @@ I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\
 F (.\Fire_detection.h)(0x69B31C5E)()
 F (.\Fire_detection.c)(0x69B31E64)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-I"D:/Keli IDE Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include"-I"D:/Keli IDE Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="543" -DSTM32F411xE -D_RTE_-o ./objects/fire_detection.o -MMD)
 I (Fire_detection.h)(0x69B31C5E)
-I (ADC.h)(0x69AB24CF)
+I (ADC.h)(0x69B3BB2E)
 I (RCC_STM32.h)(0x69A2D2C0)
 I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x6999E2E9)
 I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x6999E2E8)
 I (D:\Keli IDE Pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x698B5AFC)
 I (D:\Keli IDE Pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x6999E2E9)
 F (.\SPI_Protocol.h)(0x69B3B419)()
-F (.\SPI_Protocol.c)(0x69B3B52F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-I"D:/Keli IDE Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include"-I"D:/Keli IDE Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="543" -DSTM32F411xE -D_RTE_-o ./objects/spi_protocol.o -MMD)
+F (.\SPI_Protocol.c)(0x69B3B56B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/_Target_1-I"D:/Keli IDE Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include"-I"D:/Keli IDE Pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include"-D__UVISION_VERSION="543" -DSTM32F411xE -D_RTE_-o ./objects/spi_protocol.o -MMD)
 I (SPI_Protocol.h)(0x69B3B419)
 I (SPI.h)(0x69B31813)
 I (RCC_STM32.h)(0x69A2D2C0)

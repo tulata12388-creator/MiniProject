@@ -12,15 +12,19 @@ void ADC1_init(void)
 	ADC1_CONTROL->CR1 	 |= (1U << 8);   
 	/* Data alignment */ 
 	ADC1_CONTROL->CR2 	 &= ~(1U << 11); /* Right alignment */ 
+	/* Continuous mode */ 
+	ADC1_CONTROL->CR2 	 |=  (1U << 1);
+	/* enable DMA */
+	ADC1_Enable_DMA();
 	/* Sample time */ 
 	ADC1_CONTROL->SMPR2  &= ~(7U << (ADC_CH_LM35 * 3)); 	/* Channel 0 : 84 cycles */
 	ADC1_CONTROL->SMPR2  &= ~(7U << (ADC_CH_GAS  * 3));   /* Channel 1 : 84 cycles */
 	ADC1_CONTROL->SMPR2  &= ~(7U << (ADC_CH_S3   * 3)); 	/* Channel 2 : 84 cycles */
 	ADC1_CONTROL->SMPR2  &= ~(7U << (ADC_CH_S4   * 3));   /* Channel 3 : 84 cycles */
 	
-	ADC1_CONTROL->SMPR2  |=  (4U << (ADC_CH_LM35 * 3)); 		/* Channel 0 : 84 cycles */
+	ADC1_CONTROL->SMPR2  |=  (4U << (ADC_CH_LM35 * 3)); 	/* Channel 0 : 84 cycles */
 	ADC1_CONTROL->SMPR2  |=  (4U << (ADC_CH_GAS  * 3));  	/* Channel 1 : 84 cycles */
-	ADC1_CONTROL->SMPR2  |=  (4U << (ADC_CH_S3   * 3)); 		/* Channel 2 : 84 cycles */
+	ADC1_CONTROL->SMPR2  |=  (4U << (ADC_CH_S3   * 3)); 	/* Channel 2 : 84 cycles */
 	ADC1_CONTROL->SMPR2  |=  (4U << (ADC_CH_S4   * 3));  	/* Channel 3 : 84 cycles */
 	/* Clear sequence register */
   ADC1_CONTROL->SQR3 = 0;
@@ -56,11 +60,16 @@ void ADC1_Read_Polling(uint16_t *buffer)
         buffer[i] = ADC1_CONTROL->DR;
     }
 }
+void ADC1_Start(void)
+{
+	ADC1_CONTROL->CR2 |= (1U << 30);
+}
+
 uint16_t ADC1_Read_DMA(uint8_t channel)
 {
-    if(channel < 4)
-        return adc_buffer[channel];
-    else
+    if(channel >= ADC_CHANNEL_COUNT)
         return 0;
+
+    return adc_buffer[channel];
 }
 
