@@ -7,20 +7,20 @@
 /* 1 Stream */
 typedef struct
 {
-    volatile uint32_t CR;     
-    volatile uint32_t NDTR;   
-    volatile uint32_t PAR;    
-    volatile uint32_t M0AR;   
-    volatile uint32_t M1AR;   
-    volatile uint32_t FCR;    
+    volatile unsigned long CR;     
+    volatile unsigned long NDTR;   
+    volatile unsigned long PAR;    
+    volatile unsigned long M0AR;   
+    volatile unsigned long M1AR;   
+    volatile unsigned long FCR;    
 } DMA_Stream_Type;
 /* ALL DMA */
 typedef struct
 {
-    volatile uint32_t LISR;    
-    volatile uint32_t HISR;    
-    volatile uint32_t LIFCR;   
-		volatile uint32_t HIFCR;    
+    volatile unsigned long LISR;    
+    volatile unsigned long HISR;    
+    volatile unsigned long LIFCR;   
+		volatile unsigned long HIFCR;    
 		DMA_Stream_Type STREAM[8];
 } DMA_Type;
 
@@ -29,6 +29,6 @@ typedef struct
 
 /* Function Prototype */ 
 /* ADC - DMA */
-void DMA2_Stream0_Config_ADC(uint16_t *buffer, uint16_t length);
+void DMA2_Stream0_Config_ADC(unsigned short *buffer, unsigned short length);
 /* 					 */
 #endif /*	_DMA_H */

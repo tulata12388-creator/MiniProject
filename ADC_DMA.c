@@ -2,10 +2,12 @@
 #include "ADC.h"
 #include "DMA.h"
 #include "Define.h"
-void small_delay(volatile uint32_t t)
+void delay_ms(uint32_t ms)
 {
-    while (t--)
-        __NOP();
+    for(uint32_t i = 0; i < ms; i++)
+    {
+        for(volatile uint32_t j = 0; j < 16000; j++);
+    }
 }
 extern volatile uint16_t adc_buffer[4];
 /* Config DMD for ADC */
@@ -20,7 +22,7 @@ void DMA2_Stream0_Config_ADC(uint16_t *buffer, uint16_t length)
 		{
 			//wait
 		}
-    /* Clear interrupt flags */
+    /* Clear interrupt flags ( interrupt flags) */
 		DMA2_CONTROL->LIFCR |= (1<<0); // CFEIF0
 		DMA2_CONTROL->LIFCR |= (1<<2); // CDMEIF0
 		DMA2_CONTROL->LIFCR |= (1<<3); // CTEIF0
@@ -32,11 +34,11 @@ void DMA2_Stream0_Config_ADC(uint16_t *buffer, uint16_t length)
     /* Channel 0 (ADC1) */
     DMA2_CONTROL->STREAM[0].CR |= (0U << 25);
 
-    /* Peripheral to memory */
+    /* Peripheral to memory ( data transfer direction) */
     DMA2_CONTROL->STREAM[0].CR |= (0U << 6);
 
     /* Peripheral address = ADC_DR */
-    DMA2_CONTROL->STREAM[0].PAR = (uint32_t)&ADC1_CONTROL->DR;
+    DMA2_CONTROL->STREAM[0].PAR = (uint32_t)&ADC1_CONTROL->DR; /* The conversion result of ADC */ 
 
     /* Memory address */
     DMA2_CONTROL->STREAM[0].M0AR = (uint32_t)buffer;

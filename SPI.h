@@ -9,15 +9,15 @@
 #define SPI5_BASE_ADDRESSED 0x40015000UL
 typedef struct 
 {
-	volatile uint32_t CR1;
-	volatile uint32_t CR2;
-	volatile uint32_t SR;
-	volatile uint32_t DR;
-	volatile uint32_t CRCPR;
-	volatile uint32_t RXCRCR;
-	volatile uint32_t TXCRCR;
-	volatile uint32_t I2SCFGR;
-	volatile uint32_t I2SPR;
+	volatile unsigned long CR1;
+	volatile unsigned long CR2;
+	volatile unsigned long SR;
+	volatile unsigned long DR;
+	volatile unsigned long CRCPR;
+	volatile unsigned long RXCRCR;
+	volatile unsigned long TXCRCR;
+	volatile unsigned long I2SCFGR;
+	volatile unsigned long I2SPR;
 }SPI_TYPE;
 
 #define SPI1_CONTROL ((SPI_TYPE*) SPI1_BASE_ADDRESSED)
@@ -47,9 +47,10 @@ typedef struct
 #define SPI_CR1_SSM_EN				(1U << 9)
 /* Define basis function */ 
 void SPI1_Init(void);
-void SPI1_SetTxBuffer(uint8_t *data, uint16_t length);
+void SPI1_SetTxBuffer(unsigned char *data, unsigned short  length);
 void SPI1_ResetBuffer(void);
 /* Polling */ 
-uint8_t SPI1_Transfer(uint8_t data);
-
+unsigned char SPI1_Transfer(unsigned char data);
+/* Test */ 
+void SPI1_Init_Master(void);
 #endif /* _SPI_H */ 

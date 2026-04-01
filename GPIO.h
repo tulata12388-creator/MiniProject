@@ -14,16 +14,16 @@
 
 typedef struct
 {
-	volatile uint32_t MODER; 		//0X00
-	volatile uint32_t OTYPER;		//0X04
-	volatile uint32_t OSPEEDR;	//0X08
-	volatile uint32_t PUPDR;		//0X0C
-	volatile uint32_t IDR;			//0X10
-	volatile uint32_t ODR;			//0X14
-	volatile uint32_t BSRR;			//0X18
-	volatile uint32_t LCKR;			//0X1C
-	volatile uint32_t AFRL;			//0X20
-	volatile uint32_t AFRH;			//0X24
+	volatile unsigned long MODER; 		//0X00
+	volatile unsigned long OTYPER;		//0X04
+	volatile unsigned long OSPEEDR;	//0X08
+	volatile unsigned long PUPDR;		//0X0C
+	volatile unsigned long IDR;			//0X10
+	volatile unsigned long ODR;			//0X14
+	volatile unsigned long BSRR;			//0X18
+	volatile unsigned long LCKR;			//0X1C
+	volatile unsigned long AFRL;			//0X20
+	volatile unsigned long AFRH;			//0X24
 }GPIO_TYPE;
 
 #define GPIO_A_CONTROL ((GPIO_TYPE*) GPIO_A_BASE)

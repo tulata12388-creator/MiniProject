@@ -20,27 +20,27 @@
 #define TIM11_BASE	0x40014800UL
 typedef struct 
 {
-	volatile uint32_t CR1;
-	volatile uint32_t CR2;
-	volatile uint32_t SMCR;
-	volatile uint32_t DIER;
-	volatile uint32_t SR;
-	volatile uint32_t EGR;
-	volatile uint32_t CCMR1;
-	volatile uint32_t CCMR2;
-	volatile uint32_t CCER;
-	volatile uint32_t CNT;
-	volatile uint32_t PSC;
-	volatile uint32_t ARR;
-	volatile uint32_t RCR;  /* ADVANCED TIMER */
-	volatile uint32_t CCR1;
-	volatile uint32_t CCR2;
-	volatile uint32_t CCR3;
-	volatile uint32_t CCR4;
-	volatile uint32_t BDTR; /* ADVANCED TIMER */
-	volatile uint32_t DCR;
-	volatile uint32_t DMAR;
-	volatile uint32_t OR; 	 /* TIM 2 OR TIM 5 */ 
+	volatile unsigned long CR1;
+	volatile unsigned long CR2;
+	volatile unsigned long SMCR;
+	volatile unsigned long DIER;
+	volatile unsigned long SR;
+	volatile unsigned long EGR;
+	volatile unsigned long CCMR1;
+	volatile unsigned long CCMR2;
+	volatile unsigned long CCER;
+	volatile unsigned long CNT;
+	volatile unsigned long PSC;
+	volatile unsigned long ARR;
+	volatile unsigned long RCR;  /* ADVANCED TIMER */
+	volatile unsigned long CCR1;
+	volatile unsigned long CCR2;
+	volatile unsigned long CCR3;
+	volatile unsigned long CCR4;
+	volatile unsigned long BDTR; /* ADVANCED TIMER */
+	volatile unsigned long DCR;
+	volatile unsigned long DMAR;
+	volatile unsigned long OR; 	 /* TIM 2 OR TIM 5 */ 
 }TIMER_TYPE;
 #define TIM1_REG 	((TIMER_TYPE*) TIM1_BASE) 
 
