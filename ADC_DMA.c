@@ -2,16 +2,16 @@
 #include "ADC.h"
 #include "DMA.h"
 #include "Define.h"
-void delay_ms(uint32_t ms)
+void delay_ms(unsigned long ms)
 {
-    for(uint32_t i = 0; i < ms; i++)
+    for(unsigned long i = 0; i < ms; i++)
     {
-        for(volatile uint32_t j = 0; j < 16000; j++);
+        for(volatile unsigned long j = 0; j < 16000; j++);
     }
 }
-extern volatile uint16_t adc_buffer[4];
+extern volatile unsigned short adc_buffer[4];
 /* Config DMD for ADC */
-void DMA2_Stream0_Config_ADC(uint16_t *buffer, uint16_t length)
+void DMA2_Stream0_Config_ADC(unsigned short *buffer, unsigned short length)
 {
     /* Enable clock DMA2 */
     CLK_CONTROL->AHB1ENR |= (1U << 22);
@@ -38,10 +38,10 @@ void DMA2_Stream0_Config_ADC(uint16_t *buffer, uint16_t length)
     DMA2_CONTROL->STREAM[0].CR |= (0U << 6);
 
     /* Peripheral address = ADC_DR */
-    DMA2_CONTROL->STREAM[0].PAR = (uint32_t)&ADC1_CONTROL->DR; /* The conversion result of ADC */ 
+    DMA2_CONTROL->STREAM[0].PAR = (unsigned long)&ADC1_CONTROL->DR; /* The conversion result of ADC */ 
 
     /* Memory address */
-    DMA2_CONTROL->STREAM[0].M0AR = (uint32_t)buffer;
+    DMA2_CONTROL->STREAM[0].M0AR = (unsigned long)buffer;
 
     /* Number of data */
     DMA2_CONTROL->STREAM[0].NDTR = length;

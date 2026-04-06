@@ -41,26 +41,37 @@ void SPI1_ResetBuffer(void)
 
 void SPI1_IRQHandler(void) /* Auto xu ly khi co du lieu khong can CPU polling */
 {
+		// Check OVR 
+    if (SPI1_CONTROL->SR & (1 << 6)) /* Receive buffer not empty */
+    {
+        volatile unsigned char temp;
+        temp = SPI1_CONTROL->DR;
+        temp = SPI1_CONTROL->SR;
+        return;
+    }
     /* neu SPI nhan du lieu */
    if (SPI1_CONTROL->SR & (1 << 0))
     {
         /* doc du lieu de clear RXNE */
         unsigned char data = SPI1_CONTROL->DR;
+				/* Check */ 
+				if(spi_tx_buffer && spi_tx_length)
+				{
+					SPI1_CONTROL->DR = spi_tx_buffer[spi_tx_index];
 
-        /* GUI BYTE tiep theo */
-        SPI1_CONTROL->DR = spi_tx_buffer[spi_tx_index];
-
-        /* chuyen sang byte tiep theo */
-        spi_tx_index++;
-
-        /* neu het buffer thì quay lai dau */
-        if (spi_tx_index >= spi_tx_length)
-        {
-            spi_tx_index = 0;
-        }
+					spi_tx_index++;
+						if (spi_tx_index >= spi_tx_length)
+						{
+								spi_tx_index = 0;
+						}
+				}
+				else
+				{
+					SPI1_CONTROL->DR = 0x00;
+				}
     }
 }
-/* Test */ 
+/* Test 
 void SPI1_Init_Master(void)
 {
     CLK_CONTROL->APB2ENR |= (1<<12);
@@ -84,4 +95,4 @@ unsigned char SPI1_Transfer(unsigned char data)
     while(!(SPI1_CONTROL->SR & (1<<0)));
 
     return SPI1_CONTROL->DR;
-}
+}*/

@@ -1,7 +1,7 @@
 #include "ADC.h" 
 #include "RCC_STM32.h" 
 #include "Define.h"
-volatile uint16_t adc_buffer[4];
+volatile unsigned short adc_buffer[4];
 void ADC1_init(void) 
 {
 	/* Enable Clock */
@@ -47,9 +47,9 @@ void ADC1_Enable_DMA(void)
     /* DMA continuous request */
     ADC1_CONTROL->CR2 |= (1U << 9);
 }
-void ADC1_Read_Polling(uint16_t *buffer)
+void ADC1_Read_Polling(unsigned short *buffer)
 {
-    for(uint8_t i = 0; i < 4; i++)
+    for(unsigned char i = 0; i < 4; i++)
     {
         /* Start conversion */
         ADC1_CONTROL->CR2 |= (1U << 30);
@@ -65,7 +65,7 @@ void ADC1_Start(void)
 	ADC1_CONTROL->CR2 |= (1U << 30);
 }
 
-uint16_t ADC1_Read_DMA(uint8_t channel)
+unsigned short ADC1_Read_DMA(unsigned char channel)
 {
     if(channel >= ADC_CHANNEL_COUNT)
         return 0;
