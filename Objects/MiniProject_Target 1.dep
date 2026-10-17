@@ -1,27 +1,13 @@
 Dependencies for Project 'MiniProject', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 6230000::V6.23::ARMCLANG
-F (.\main.c)(0x6998BB74)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/main.o -MD)
-I (board.h)(0x6998AFB9)
-I (D:\Kelic_stm32\ARM\ARMCLANG\include\stdint.h)(0x671F3700)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x698C7E9F)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x698C7E9F)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_version.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_compiler.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_armclang.h)(0x698C7D66)
-I (D:\Kelic_stm32\ARM\ARMCLANG\include\arm_acle.h)(0x671F36F0)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\armv7m_mpu.h)(0x698C7D66)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x698C7E9F)
-I (RCC_STM32_LIB.h)(0x6998ABE0)
-I (GPIO.h)(0x6999D636)
-I (SPI_LIB.h)(0x6998AE4D)
-I (DMA_LIB.h)(0x6998AE7E)
-I (ADC_LIB.h)(0x6998AF09)
-I (greenhouse.h)(0x6998AF24)
-F (.\RCC_STM32_LIB.h)(0x6998ABE0)()
-F (.\RCC_STM32_LIB.c)(0x6998ABCC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/rcc_stm32_lib.o -MD)
-I (RCC_STM32_LIB.h)(0x6998ABE0)
+F (.\main.c)(0x69F5C03C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/main.o -MD)
+I (board.h)(0x69F5C300)
+I (c_stdint_type_confirm.h)(0x69CB98E7)
+I (RCC_STM32_LIB.h)(0x69CD26E2)
+I (GPIO.h)(0x69F5D046)
+I (SPI_LIB.h)(0x69CB92DF)
+I (DMA_LIB.h)(0x69F5B857)
+I (ADC_LIB.h)(0x69CD2854)
 I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x698C7E9F)
 I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x698C7E9F)
 I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x698C7D66)
@@ -33,9 +19,12 @@ I (D:\Kelic_stm32\ARM\ARMCLANG\include\arm_acle.h)(0x671F36F0)
 I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x698C7D66)
 I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\armv7m_mpu.h)(0x698C7D66)
 I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x698C7E9F)
-F (.\GPIO.c)(0x6998AD54)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/gpio.o -MD)
-I (GPIO.h)(0x6999D636)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x698C7E9F)
+I (greenhouse.h)(0x69CD2873)
+I (adc_mgr.h)(0x69CA24B3)
+I (fire_logic.h)(0x69CD2888)
+I (actuators.h)(0x69CD2801)
+F (.\RCC_STM32_LIB.h)(0x69CD26E2)()
+F (.\RCC_STM32_LIB.c)(0x69F5BDA8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/rcc_stm32_lib.o -MD)
 I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x698C7E9F)
 I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x698C7D66)
 I (D:\Kelic_stm32\ARM\ARMCLANG\include\stdint.h)(0x671F3700)
@@ -46,16 +35,30 @@ I (D:\Kelic_stm32\ARM\ARMCLANG\include\arm_acle.h)(0x671F36F0)
 I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x698C7D66)
 I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\armv7m_mpu.h)(0x698C7D66)
 I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x698C7E9F)
-F (.\GPIO.h)(0x6999D636)()
-F (.\SPI_LIB.h)(0x6998AE4D)()
-F (.\UART_LIB.h)(0x6998A589)()
-F (.\DMA_LIB.h)(0x6998AE7E)()
-F (.\TIMER.h)(0x6998A5C7)()
-F (.\ADC_LIB.h)(0x6998AF09)()
-F (.\actuators.h)(0x6998AD9F)()
-F (.\actuators.c)(0x6998ADB3)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/actuators.o -MD)
-I (actuators.h)(0x6998AD9F)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x698C7E9F)
+F (.\GPIO.c)(0x69F5B6D8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/gpio.o -MD)
+I (GPIO.h)(0x69F5D046)
+I (c_stdint_type_confirm.h)(0x69CB98E7)
+I (board.h)(0x69F5C300)
+F (.\GPIO.h)(0x69F5D046)()
+F (.\SPI_LIB.h)(0x69CB92DF)()
+F (.\UART_LIB.h)(0x69CA24B3)()
+F (.\DMA_LIB.h)(0x69F5B857)()
+F (.\TIMER.h)(0x69CD2832)()
+F (.\ADC_LIB.h)(0x69CD2854)()
+F (.\actuators.h)(0x69CD2801)()
+F (.\actuators.c)(0x69A9BB3C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/actuators.o -MD)
+I (actuators.h)(0x69CD2801)
+I (GPIO.h)(0x69F5D046)
+I (c_stdint_type_confirm.h)(0x69CB98E7)
+I (fire_logic.h)(0x69CD2888)
+I (board.h)(0x69F5C300)
+F (.\SPI_LIB.c)(0x69F5B2A7)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/spi_lib.o -MD)
+I (SPI_LIB.h)(0x69CB92DF)
+I (c_stdint_type_confirm.h)(0x69CB98E7)
+I (irq_rm0383.h)(0x69F5BD2D)
+I (core_cm4_bm.h)(0x69CD1CCA)
+I (board.h)(0x69F5C300)
+F (.\ADC_DMA_LIB.c)(0x69F1D753)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/adc_dma_lib.o -MD)
 I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x698C7E9F)
 I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x698C7D66)
 I (D:\Kelic_stm32\ARM\ARMCLANG\include\stdint.h)(0x671F3700)
@@ -66,54 +69,43 @@ I (D:\Kelic_stm32\ARM\ARMCLANG\include\arm_acle.h)(0x671F36F0)
 I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x698C7D66)
 I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\armv7m_mpu.h)(0x698C7D66)
 I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x698C7E9F)
-F (.\SPI_LIB.c)(0x6998AE30)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/spi_lib.o -MD)
-I (SPI_LIB.h)(0x6998AE4D)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x698C7E9F)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x698C7E9F)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x698C7D66)
+I (board.h)(0x69F5C300)
+I (c_stdint_type_confirm.h)(0x69CB98E7)
+F (.\greenhouse.h)(0x69CD2873)()
+F (.\greenhouse.c)(0x69B5BAB8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/greenhouse.o -MD)
+I (greenhouse.h)(0x69CD2873)
+I (c_stdint_type_confirm.h)(0x69CB98E7)
+I (board.h)(0x69F5C300)
+I (DMA_LIB.h)(0x69F5B857)
+I (adc_mgr.h)(0x69CA24B3)
 I (D:\Kelic_stm32\ARM\ARMCLANG\include\stdint.h)(0x671F3700)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_version.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_compiler.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_armclang.h)(0x698C7D66)
-I (D:\Kelic_stm32\ARM\ARMCLANG\include\arm_acle.h)(0x671F36F0)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\armv7m_mpu.h)(0x698C7D66)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x698C7E9F)
-F (.\ADC_DMA_LIB.c)(0x6999A95D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/adc_dma_lib.o -MD)
-I (ADC_LIB.h)(0x6998AF09)
+I (fire_logic.h)(0x69CD2888)
+I (actuators.h)(0x69CD2801)
+I (GPIO.h)(0x69F5D046)
+I (SPI_LIB.h)(0x69CB92DF)
+F (.\board.h)(0x69F5C300)()
+F (.\adc_mgr.c)(0x69F5D10A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/adc_mgr.o -MD)
+I (adc_mgr.h)(0x69CA24B3)
 I (D:\Kelic_stm32\ARM\ARMCLANG\include\stdint.h)(0x671F3700)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x698C7E9F)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x698C7E9F)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_version.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_compiler.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_armclang.h)(0x698C7D66)
-I (D:\Kelic_stm32\ARM\ARMCLANG\include\arm_acle.h)(0x671F36F0)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\armv7m_mpu.h)(0x698C7D66)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x698C7E9F)
-I (DMA_LIB.h)(0x6998AE7E)
-I (board.h)(0x6998AFB9)
-F (.\greenhouse.h)(0x6998AF24)()
-F (.\greenhouse.c)(0x6998AF51)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/greenhouse.o -MD)
-I (greenhouse.h)(0x6998AF24)
-I (D:\Kelic_stm32\ARM\ARMCLANG\include\stdint.h)(0x671F3700)
-I (board.h)(0x6998AFB9)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x698C7E9F)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x698C7E9F)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\core_cm4.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_version.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_compiler.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\cmsis_armclang.h)(0x698C7D66)
-I (D:\Kelic_stm32\ARM\ARMCLANG\include\arm_acle.h)(0x671F36F0)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\cmsis_armclang_m.h)(0x698C7D66)
-I (D:\Kelic_pack\ARM\CMSIS\6.3.0\CMSIS\Core\Include\m-profile\armv7m_mpu.h)(0x698C7D66)
-I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x698C7E9F)
-I (DMA_LIB.h)(0x6998AE7E)
-I (ADC_LIB.h)(0x6998AF09)
-I (actuators.h)(0x6998AD9F)
-I (SPI_LIB.h)(0x6998AE4D)
-F (.\board.h)(0x6998AFB9)()
+I (board.h)(0x69F5C300)
+I (c_stdint_type_confirm.h)(0x69CB98E7)
+F (.\adc_mgr.h)(0x69CA24B3)()
+F (.\fire_logic.c)(0x69A8880D)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/fire_logic.o -MD)
+I (fire_logic.h)(0x69CD2888)
+I (c_stdint_type_confirm.h)(0x69CB98E7)
+I (board.h)(0x69F5C300)
+F (.\fire_logic.h)(0x69CD2888)()
+F (.\irq_rm0383.h)(0x69F5BD2D)()
+F (.\c_stdint_type_confirm.h)(0x69CB98E7)()
+F (.\core_cm4_bm.h)(0x69CD1CCA)()
+F (.\i2c_header.h)(0x69F5BDF7)()
+F (.\I2C_DMA_LIB.c)(0x69F5BE17)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/i2c_dma_lib.o -MD)
+I (irq_rm0383.h)(0x69F5BD2D)
+I (core_cm4_bm.h)(0x69CD1CCA)
+I (c_stdint_type_confirm.h)(0x69CB98E7)
+I (i2c_header.h)(0x69F5BDF7)
+I (DMA_LIB.h)(0x69F5B857)
+I (board.h)(0x69F5C300)
 F (RTE/Device/STM32F411VETx/startup_stm32f411xe.s)(0x698C7E9F)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4 -Wa,armasm,--pd,"__EVAL SETA 1"-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 538" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"STM32F411xE SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32f411xe.o)
 F (RTE/Device/STM32F411VETx/system_stm32f4xx.c)(0x698C7E9F)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__EVAL -gdwarf-4 -O0 -ffunction-sections -w-I./RTE/_Target_1-ID:/Kelic_pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-ID:/Kelic_pack/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F411xE -D_RTE_-o ./objects/system_stm32f4xx.o -MD)
 I (D:\Kelic_pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x698C7E9F)

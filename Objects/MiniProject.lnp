@@ -6,6 +6,9 @@
 ".\objects\spi_lib.o"
 ".\objects\adc_dma_lib.o"
 ".\objects\greenhouse.o"
+".\objects\adc_mgr.o"
+".\objects\fire_logic.o"
+".\objects\i2c_dma_lib.o"
 ".\objects\startup_stm32f411xe.o"
 ".\objects\system_stm32f4xx.o"
 --ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

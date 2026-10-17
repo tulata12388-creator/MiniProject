@@ -1,7 +1,7 @@
 #ifndef _TIMER_H_
 #define _TIMER_H_
 
-#include <stdint.h>
+#include "c_stdint_type_confirm.h"
 
 /* TIM base address (STM32F411) */
 #define TIM1_BASE_ADDR    (0x40010000UL)
@@ -16,8 +16,8 @@
 
 /*
  * TIM register map (superset).
- * V?i timer không có vài thanh ghi (vd TIM9/10/11), m?y field dó có th? là reserved trong silicon,
- * nhung map này v?n ok d? truy c?p ph?n chung (CR1, PSC, ARR, CCRx...).
+ * V?i timer kh?ng c? v?i thanh ghi (vd TIM9/10/11), m?y field d? c? th? l? reserved trong silicon,
+ * nhung map n?y v?n ok d? truy c?p ph?n chung (CR1, PSC, ARR, CCRx...).
  */
 typedef struct
 {

@@ -24,4 +24,4 @@ typedef struct
 #define USART2_REG   ((USART_TypeDef_Mini*) USART2_BASE_ADDR)
 #define USART6_REG   ((USART_TypeDef_Mini*) USART6_BASE_ADDR)
 
-#endif /* _USART_H_ */
+#endif /* _USART_H_ */	
